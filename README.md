@@ -1,4 +1,0 @@
-myStudentObjectiveC
-===================
-
-ObjectiveC
