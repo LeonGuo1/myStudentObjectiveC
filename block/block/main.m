@@ -20,7 +20,9 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        
         int(*p)(int,int)=sum;
+        
         int c=p(5,6);
         NSLog(@"p sum is %d",c);
         // insert code here...
@@ -29,6 +31,10 @@ int main(int argc, const char * argv[])
             return a+b;
         };
         NSLog(@"block count is %d",sumblock(10,20));
+        int(^myBlock)()=^(){
+            return 2;
+        };
+        myBlock();
     }
     return 0;
 }
